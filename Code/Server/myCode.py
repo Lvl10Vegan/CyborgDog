@@ -46,8 +46,8 @@ def randMotion():
 if __name__ == '__main__':
 	print ('Program is starting ... ')
 	if len(sys.argv)<2:
-        print ("Parameter error: Please enter host IP address")
-        exit()
+		print ("Parameter error: Please enter host IP address")
+		exit()
 
 	else:
 		host_ip = sys.argv[1]
