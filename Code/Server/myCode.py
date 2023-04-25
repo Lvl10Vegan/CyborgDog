@@ -17,20 +17,20 @@ def randMotion():
 	rand = random.randInt(1,4)
 	
 	if rand == 1:
-		#Using the forWard function, let the robot dog move forward five steps and keep standing.
-		for i in range(5):
+		#Using the forWard function, let the robot dog move forward 20 steps and keep standing.
+		for i in range(20):
 			control.forWard()
 		control.stop()
 
 	if rand == 2:
-		#Turn the robot dog's body 10 degrees to the right
-		for i in range(10):
+		#Turn the robot dog's body 90 degrees to the right
+		for i in range(90):
 			control.attitude(0,0,i)
 			time.sleep(0.1)
 
 	if rand == 3:
-		#Turn the robot dog's body 20 degrees to the left	
-		for i in range(10,-10,-1):
+		#Turn the robot dog's body 90 degrees to the left	
+		for i in range(80,-10,-1):
 			control.attitude(0,0,i)
 			time.sleep(0.1)
 
